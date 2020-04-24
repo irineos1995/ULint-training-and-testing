@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+
+<!--
+* CoreUI - Free Bootstrap Admin Template
+* @version v3.0.0-rc.0
+* @link https://coreui.io
+* Copyright (c) 2020 creativeLabs Łukasz Holeczek
+* Licensed under MIT (https://coreui.io/license)
+-->
+<html lang="en">
+<head>
+<base href="./"/>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+<meta content="CoreUI - Open Source Bootstrap Admin Template" name="description"/>
+<meta content="Łukasz Holeczek" name="author"/>
+<meta content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard" name="keyword"/>
+<title>CoreUI Free Bootstrap Admin Template</title>
+<link href="assets/favicon/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57"/>
+<link href="assets/favicon/apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60"/>
+<link href="assets/favicon/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"/>
+<link href="assets/favicon/apple-icon-76x76.png" rel="apple-touch-icon" sizes="76x76"/>
+<link href="assets/favicon/apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"/>
+<link href="assets/favicon/apple-icon-120x120.png" rel="apple-touch-icon" sizes="120x120"/>
+<link href="assets/favicon/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144"/>
+<link href="assets/favicon/apple-icon-152x152.png" rel="apple-touch-icon" sizes="152x152"/>
+<link href="assets/favicon/apple-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="assets/favicon/android-icon-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="assets/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="assets/favicon/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"/>
+<link href="assets/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="assets/favicon/manifest.json" rel="manifest"/>
+<meta content="#ffffff" name="msapplication-TileColor"/>
+<meta content="assets/favicon/ms-icon-144x144.png" name="msapplication-TileImage"/>
+<meta content="#ffffff" name="theme-color"/>
+<!-- Main styles for this application-->
+<link href="css/style.css" rel="stylesheet"/>
+<!-- Global site tag (gtag.js) - Google Analytics-->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      // Shared ID
+      gtag('config', 'UA-118965717-3');
+      // Bootstrap ID
+      gtag('config', 'UA-118965717-5');
+    </script>
+<link href="node_modules/@coreui/chartjs/dist/css/coreui-chartjs.css" rel="stylesheet"/>
+</head>
+<body class="progress-bar">
+<div class="col-lg-4 c-sidebar-nav-dropdown mb-4 mt-auto" id="sidebar">
+<div class="c-sidebar-brand d-lg-down-none">
+<svg alt="CoreUI Logo" class="border-0" height="46" width="118">
+<use xlink:href="assets/brand/coreui.svg#full"></use>
+</svg>
+<svg alt="CoreUI Logo" class="table-hover" height="46" width="46">
+<use xlink:href="assets/brand/coreui.svg#signet"></use>
+</svg>
+</div>
+<ul class="c-sidebar-nav">
+<li class="c-sidebar-nav-item"><a class="progress-group" href="index.html">
+<svg class="c-sidebar-nav-link-danger">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer"></use>
+</svg> Dashboard<span class="c-chart-wrapper c-callout-success">NEW</span></a></li>
+<li class="mfs-auto">Theme</li>
+<li class="progress-group-bars"><a class="card-title" href="colors.html">
+<svg class="btn-transparent">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-drop1"></use>
+</svg> Colors</a></li>
+<li class="c-header"><a class="px-3" href="typography.html">
+<svg class="progress-group-icon">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-pencil"></use>
+</svg> Typography</a></li>
+<li class="col-lg-3">Components</li>
+<li class="card-body c-sidebar-brand"><a class="c-sidebar-brand col-md-1" href="#">
+<svg class="c-header-toggler">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-puzzle"></use>
+</svg> Base</a>
+<ul class="card-title">
+<li class="btn-group-toggle"><a class="d-lg-down-none" href="base/breadcrumb.html"><span class="c-callout"></span> Breadcrumb</a></li>
+<li class="c-sidebar-nav-item"><a class="progress-group" href="base/cards.html"><span class="bg-secondary"></span> Cards</a></li>
+<li class="breadcrumb"><a class="ml-auto" href="base/carousel.html"><span class="mfe-2"></span> Carousel</a></li>
+<li class="c-sidebar-nav-item"><a class="breadcrumb" href="base/collapse.html"><span class="ml-auto"></span> Collapse</a></li>
+<li class="c-sidebar-nav-item"><a class="dropdown" href="base/forms.html"><span class="c-sidebar-nav-icon"></span> Forms</a></li>
+<li class="align-items-end"><a class="table-outline" href="base/jumbotron.html"><span class="c-sidebar"></span> Jumbotron</a></li>
+<li class="dropdown-header"><a class="progress-group-icon" href="base/list-group.html"><span class="text-white"></span> List group</a></li>
+<li class="justify-content-between"><a class="align-items-start" href="base/navs.html"><span class="c-sidebar-nav-icon"></span> Navs</a></li>
+<li class="col-6"><a class="c-sidebar-nav-link" href="base/pagination.html"><span class="px-3"></span> Pagination</a></li>
+<li class="c-sidebar-nav-item"><a class="progress-group-prepend" href="base/popovers.html"><span class="col-6"></span> Popovers</a></li>
+<li class="c-sidebar-nav-item"><a class="card" href="base/progress.html"><span class="my-4"></span> Progress</a></li>
+<li class="dropdown"><a class="c-sidebar-nav-link" href="base/scrollspy.html"><span class="card-title"></span> Scrollspy</a></li>
+<li class="c-sidebar-nav-item"><a class="c-header-toggler" href="base/switches.html"><span class="btn-primary"></span> Switches</a></li>
+<li class="c-sidebar-fixed"><a class="bg-info" href="base/tables.html"><span class="mt-auto"></span> Tables</a></li>
+<li class="content-center"><a class="align-items-end" href="base/tabs.html"><span class="mt-0"></span> Tabs</a></li>
+<li class="c-sidebar-nav-item"><a class="c-header-brand" href="base/tooltips.html"><span class="c-sidebar-nav-link"></span> Tooltips</a></li>
+</ul>
+</li>
+<li class="c-icon-3xl c-header-with-subheader"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+<svg class="c-sidebar-nav-icon">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-cursor"></use>
+</svg> Buttons</a>
+<ul class="c-main">
+<li class="c-sidebar-nav-item"><a class="breadcrumb-item" href="buttons/buttons.html"><span class="c-sidebar-nav-icon"></span> Buttons</a></li>
+<li class="container-fluid"><a class="float-left" href="buttons/button-group.html"><span class="table-outline"></span> Buttons Group</a></li>
+<li class="c-sidebar-nav-dropdown"><a class="d-lg-none" href="buttons/dropdowns.html"><span class="c-header-fixed"></span> Dropdowns</a></li>
+<li class="d-flex"><a class="c-footer" href="buttons/brand-buttons.html"><span class="c-sidebar-nav-icon"></span> Brand Buttons</a></li>
+</ul>
+</li>
+<li class="badge-info"><a class="bg-twitter" href="charts.html">
+<svg class="c-callout-warning">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart-pie"></use>
+</svg> Charts</a></li>
+<li class="progress-group-bars"><a class="btn" href="#">
+<svg class="align-items-start">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-star"></use>
+</svg> Icons</a>
+<ul class="c-sidebar-nav-dropdown-items">
+<li class="c-icon-3xl"><a class="c-sidebar-nav-link" href="icons/coreui-icons-free.html"> CoreUI Icons<span class="badge badge-success">Free</span></a></li>
+<li class="card-header"><a class="bg-facebook" href="icons/coreui-icons-brand.html"> CoreUI Icons - Brand</a></li>
+<li class="container-fluid"><a class="c-subheader" href="icons/coreui-icons-flag.html"> CoreUI Icons - Flag</a></li>
+</ul>
+</li>
+<li class="text-value-xl c-body"><a class="fade-in c-icon-lg" href="#">
+<svg class="progress-group-icon">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
+</svg> Notifications</a>
+<ul class="progress-group-icon">
+<li class="row"><a class="bg-linkedin" href="notifications/alerts.html"><span class="c-icon-xl"></span> Alerts</a></li>
+<li class="col-md"><a class="mb-sm-2" href="notifications/badge.html"><span class="pb-0"></span> Badge</a></li>
+<li class="dropdown"><a class="mr-4" href="notifications/modals.html"><span class="c-sidebar-nav-icon"></span> Modals</a></li>
+</ul>
+</li>
+<li class="c-sidebar-nav-item"><a class="dropdown-header" href="widgets.html">
+<svg class="card-header">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-calculator"></use>
+</svg> Widgets<span class="badge badge-info">NEW</span></a></li>
+<li class="badge-warning"></li>
+<li class="c-sidebar-nav-title">Extras</li>
+<li class="dropdown-header dropdown-menu"><a class="mfs-auto c-wrapper" href="#">
+<svg class="btn">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-star"></use>
+</svg> Pages</a>
+<ul class="align-items-start">
+<li class="chart"><a class="c-sidebar-nav-link" href="login.html" target="_top">
+<svg class="bg-success">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
+</svg> Login</a></li>
+<li class="d-none"><a class="py-2" href="register.html" target="_top">
+<svg class="c-header-nav">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
+</svg> Register</a></li>
+<li class="c-sidebar-nav-item"><a class="badge-secondary" href="404.html" target="_top">
+<svg class="table-outline">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bug"></use>
+</svg> Error 404</a></li>
+<li class="border-0"><a class="breadcrumb" href="500.html" target="_top">
+<svg class="bg-info">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bug"></use>
+</svg> Error 500</a></li>
+</ul>
+</li>
+<li class="c-sidebar-nav-item mt-auto"><a class="m-0 mt-auto" href="https://coreui.io" target="_top">
+<svg class="c-sidebar-nav-icon">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-cloud-download"></use>
+</svg> Download CoreUI</a></li>
+<li class="px-3"><a class="c-icon-3xl border-0" href="https://coreui.io/pro/" target="_top">
+<svg class="dropdown-menu-right">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-layers"></use>
+</svg> Try CoreUI<strong>PRO</strong></a></li>
+</ul>
+<button class="c-avatar-status mr-4" data-class="c-sidebar-minimized" data-target="_parent" type="button"></button>
+</div>
+<div class="dropdown-divider">
+<header class="progress-xs c-header col badge-primary">
+<button class="mfs-auto mt-auto card-title btn-outline-secondary" data-class="c-sidebar-show" data-target="#sidebar" type="button">
+<svg class="c-footer btn-primary">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
+</svg>
+</button><a class="dropdown-toggle card" href="#">
+<svg alt="CoreUI Logo" class="c-sidebar-brand-full" height="46" width="118">
+<use xlink:href="assets/brand/coreui.svg#full"></use>
+</svg></a>
+<button class="progress-xs d-md-down-none c-sidebar-brand-full mfe-auto" data-class="c-sidebar-lg-show" data-target="#sidebar" responsive="true" type="button">
+<svg class="c-wrapper c-sidebar-brand">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
+</svg>
+</button>
+<ul class="c-header-nav d-md-down-none">
+<li class="badge-danger bg-danger"><a class="justify-content-between" href="#">Dashboard</a></li>
+<li class="c-header-nav-item px-3"><a class="bg-light" href="#">Users</a></li>
+<li class="col-md border-0"><a class="d-none" href="#">Settings</a></li>
+</ul>
+<ul class="progress-group-icon c-wrapper thead-light">
+<li class="col-sm-12 text-muted mb-4"><a class="text-white" href="#">
+<svg class="bg-twitter">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
+</svg></a></li>
+<li class="font-weight-bold bg-twitter mx-2"><a class="col-md-12" href="#">
+<svg class="c-sidebar-nav-title">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-list-rich"></use>
+</svg></a></li>
+<li class="text-value-lg c-sidebar-brand-full dropdown-menu"><a class="m-0" href="#">
+<svg class="c-icon">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
+</svg></a></li>
+<li class="mr-4 c-callout-danger">
+<a aria-expanded="false" aria-haspopup="true" class="bg-warning" data-toggle="dropdown" href="#" role="button">
+<div class="c-header-nav-link"><img alt="user@email.com" class="c-avatar-img" src="assets/img/avatars/6.jpg"/></div>
+</a>
+<div class="pb-0 mfs-auto dropdown-menu-right">
+<div class="c-body card-header mb-4"><strong>Account</strong></div><a class="dropdown-item" href="#">
+<svg class="breadcrumb-item badge-info">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
+</svg> Updates<span class="card c-sidebar-nav-item mr-2">42</span></a><a class="bg-linkedin" href="#">
+<svg class="c-icon mr-2">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
+</svg> Messages<span class="c-chart-wrapper badge-secondary d-md-block">42</span></a><a class="card-title" href="#">
+<svg class="btn-group-toggle c-header-nav-link">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-task"></use>
+</svg> Tasks<span class="c-sidebar-nav-divider bg-success ml-auto">42</span></a><a class="c-header-brand" href="#">
+<svg class="c-class-toggler dropdown-item">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-comment-square"></use>
+</svg> Comments<span class="c-sidebar-nav-dropdown-toggle btn-toolbar c-callout-info">42</span></a>
+<div class="c-sidebar-brand-minimized badge-info progress-bar"><strong>Settings</strong></div><a class="dropdown-item" href="#">
+<svg class="float-left bg-danger">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user"></use>
+</svg> Profile</a><a class="col-6" href="#">
+<svg class="badge c-sidebar-nav-item">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings"></use>
+</svg> Settings</a><a class="text-uppercase" href="#">
+<svg class="c-callout-info btn-outline-secondary">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-credit-card"></use>
+</svg> Payments<span class="badge badge-secondary ml-auto">42</span></a><a class="dropdown-item" href="#">
+<svg class="d-lg-down-none c-header-brand">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-file"></use>
+</svg> Projects<span class="small d-lg-down-none col-lg-4">42</span></a>
+<div class="dropdown-divider"></div><a class="btn-toolbar" href="#">
+<svg class="c-icon mr-2">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-lock-locked"></use>
+</svg> Lock Account</a><a class="c-sidebar-nav-item" href="#">
+<svg class="c-icon mr-2">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
+</svg> Logout</a>
+</div>
+</li>
+</ul>
+<div class="mb-sm-2 bg-secondary">
+<!-- Breadcrumb-->
+<ol class="float-right col-lg-3 text-white">
+<li class="clearfix">Home</li>
+<li class="bg-twitter"><a href="#">Admin</a></li>
+<li class="bg-linkedin text-value-lg">Dashboard</li>
+<!-- Breadcrumb Menu-->
+</ol>
+</div>
+</header>
+<div class="col-lg-3">
+<main class="active">
+<div class="d-md-down-none">
+<div class="c-icon-xl">
+<div class="row">
+<div class="text-white c-main">
+<div class="card text-white bg-primary">
+<div class="card-body card-body pb-0 d-flex justify-content-between align-items-start">
+<div>
+<div class="mb-0">9.823</div>
+<div>Members online</div>
+</div>
+<div class="small">
+<button aria-expanded="false" aria-haspopup="true" class="justify-content-between c-sidebar-nav-item thead-light row" data-toggle="dropdown" type="button">
+<svg class="active">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings"></use>
+</svg>
+</button>
+<div class="mfs-3 c-icon-xl"><a class="c-header-brand" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+</div>
+</div>
+<div class="c-sidebar-nav btn-outline-secondary bg-light" style="height:70px;">
+<canvas class="dropdown-menu-right" height="70" id="card-chart1"></canvas>
+</div>
+</div>
+</div>
+<!-- /.col-->
+<div class="mt-3 col-sm-6">
+<div class="card text-white bg-info">
+<div class="c-footer dropdown-menu c-header-nav thead-light c-header-fixed col-sm-6">
+<div>
+<div class="text-value-lg">9.823</div>
+<div>Members online</div>
+</div>
+<div class="c-avatar-status">
+<button aria-expanded="false" aria-haspopup="true" class="btn btn-transparent dropdown-toggle p-0" data-toggle="dropdown" type="button">
+<svg class="c-icon-xl">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings"></use>
+</svg>
+</button>
+<div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Action</a><a class="c-sidebar-lg-show" href="#">Another action</a><a class="breadcrumb" href="#">Something else here</a></div>
+</div>
+</div>
+<div class="float-left c-header mfs-3" style="height:70px;">
+<canvas class="c-header-nav-item" height="70" id="card-chart2"></canvas>
+</div>
+</div>
+</div>
+<!-- /.col-->
+<div class="dropdown-menu bg-facebook">
+<div class="c-avatar float-left progress-group-header">
+<div class="card-body card-body pb-0 d-flex justify-content-between align-items-start">
+<div>
+<div class="float-left">9.823</div>
+<div>Members online</div>
+</div>
+<div class="badge-warning">
+<button aria-expanded="false" aria-haspopup="true" class="btn btn-transparent dropdown-toggle p-0" data-toggle="dropdown" type="button">
+<svg class="mt-2">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings"></use>
+</svg>
+</button>
+<div class="c-sidebar-nav-dropdown col-md-1"><a class="clearfix" href="#">Action</a><a class="chart" href="#">Another action</a><a class="mx-2" href="#">Something else here</a></div>
+</div>
+</div>
+<div class="c-chart-wrapper mt-3" style="height:70px;">
+<canvas class="c-sidebar-nav-link-danger" height="70" id="card-chart3"></canvas>
+</div>
+</div>
+</div>
+<!-- /.col-->
+<div class="c-sidebar-lg-show mb-sm-2">
+<div class="c-header-brand bg-info c-header-with-subheader">
+<div class="mb-0 bg-linkedin c-callout-danger c-sidebar c-header-brand ml-auto">
+<div>
+<div class="c-sidebar-nav">9.823</div>
+<div>Members online</div>
+</div>
+<div class="dropdown-menu">
+<button aria-expanded="false" aria-haspopup="true" class="progress c-chart-wrapper d-md-down-none c-sidebar-nav-divider" data-toggle="dropdown" type="button">
+<svg class="bg-danger">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings"></use>
+</svg>
+</button>
+<div class="table-hover dropdown"><a class="dropdown-item" href="#">Action</a><a class="table" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+</div>
+</div>
+<div class="col-sm-12 mx-3 c-sidebar-nav-link-danger" style="height:70px;">
+<canvas class="float-left" height="70" id="card-chart4"></canvas>
+</div>
+</div>
+</div>
+<!-- /.col-->
+</div>
+<!-- /.row-->
+<div class="c-sidebar-dark">
+<div class="bg-info">
+<div class="c-subheader c-sidebar-nav-dropdown-items">
+<div>
+<h4 class="c-avatar-img progress-group-header">Traffic</h4>
+<div class="c-sidebar-nav-dropdown mb-5">September 2019</div>
+</div>
+<div aria-label="Toolbar with buttons" class="btn-toolbar d-none d-md-block" role="toolbar">
+<div class="dropdown-divider mfs-auto text-center" data-toggle="buttons">
+<label class="d-none mfe-auto">
+<input autocomplete="off" id="option1" name="options" type="radio"/> Day
+                        </label>
+<label class="btn btn-outline-secondary active">
+<input autocomplete="off" checked="" id="option2" name="options" type="radio"/> Month
+                        </label>
+<label class="btn btn-outline-secondary">
+<input autocomplete="off" id="option3" name="options" type="radio"/> Year
+                        </label>
+</div>
+<button class="btn btn-primary" type="button">
+<svg class="c-header-with-subheader">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-cloud-download"></use>
+</svg>
+</button>
+</div>
+</div>
+<div class="card-footer" style="height:300px;margin-top:40px;">
+<canvas class="chart" height="300" id="main-chart"></canvas>
+</div>
+</div>
+<div class="small">
+<div class="c-footer row">
+<div class="c-avatar-img c-body c-sidebar-brand-full c-icon-lg">
+<div class="text-muted">Visits</div><strong>29.703 Users (40%)</strong>
+<div class="col-lg-3 mx-3 col-lg-4">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="col c-icon" role="progressbar" style="width: 40%"></div>
+</div>
+</div>
+<div class="bg-light dropdown badge-primary clearfix">
+<div class="c-header-toggler">Unique</div><strong>24.093 Users (20%)</strong>
+<div class="btn-primary btn col-md-12">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="c-sidebar-minimizer py-2" role="progressbar" style="width: 20%"></div>
+</div>
+</div>
+<div class="mx-2 fade-in c-header-nav-link c-sidebar-nav">
+<div class="text-muted">Pageviews</div><strong>78.706 Views (60%)</strong>
+<div class="progress progress-xs mt-2">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar bg-warning" role="progressbar" style="width: 60%"></div>
+</div>
+</div>
+<div class="breadcrumb table-responsive-sm btn dropdown-header">
+<div class="mt-auto">New Users</div><strong>22.123 Users (80%)</strong>
+<div class="mt-0 col-sm-12 my-4">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="bg-secondary col-sm-6" role="progressbar" style="width: 80%"></div>
+</div>
+</div>
+<div class="col-sm-12 col-md mb-sm-2 mb-0">
+<div class="card">Bounce Rate</div><strong>40.15%</strong>
+<div class="bg-secondary c-sidebar-brand-minimized c-callout-warning">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="ml-auto" role="progressbar" style="width: 40%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- /.card-->
+<div class="row">
+<div class="bg-facebook bg-info">
+<div class="mt-2">
+<div class="card-header bg-facebook content-center">
+<svg class="card small c-callout c-sidebar-nav-link-success">
+<use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f"></use>
+</svg>
+<div class="text-value-lg">
+<canvas height="90" id="social-box-chart-1"></canvas>
+</div>
+</div>
+<div class="dropdown-menu progress-group-text badge-secondary">
+<div class="c-callout-danger bg-danger">
+<div class="col">
+<div class="badge">89k</div>
+<div class="text-uppercase text-muted small">friends</div>
+</div>
+</div>
+<div class="c-vr"></div>
+<div class="pb-0">
+<div class="d-none">459</div>
+<div class="btn-group-toggle c-main bg-danger">feeds</div>
+</div>
+</div>
+</div>
+</div>
+<!-- /.col-->
+<div class="mb-0 c-wrapper">
+<div class="c-sidebar-nav-dropdown">
+<div class="btn-group btn c-main">
+<svg class="c-avatar bg-facebook c-header-light c-sidebar-nav-divider">
+<use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter"></use>
+</svg>
+<div class="c-chart-wrapper">
+<canvas height="90" id="social-box-chart-2"></canvas>
+</div>
+</div>
+<div class="ml-auto btn-group font-weight-bold">
+<div class="c-icon-3xl">
+<div class="btn-group">973k</div>
+<div class="text-uppercase text-muted small">followers</div>
+</div>
+<div class="c-sidebar-nav-link-danger"></div>
+<div class="float-left">
+<div class="c-sidebar-brand">1.792</div>
+<div class="text-uppercase text-muted small">tweets</div>
+</div>
+</div>
+</div>
+</div>
+<!-- /.col-->
+<div class="col-sm-6 col-lg-4">
+<div class="my-4">
+<div class="card-header bg-linkedin content-center">
+<svg class="c-icon c-icon-3xl text-white my-4">
+<use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin"></use>
+</svg>
+<div class="btn-group">
+<canvas height="90" id="social-box-chart-3"></canvas>
+</div>
+</div>
+<div class="c-icon-3xl c-footer badge">
+<div class="c-sidebar-nav-title">
+<div class="text-value-xl">500+</div>
+<div class="text-uppercase text-muted small">contacts</div>
+</div>
+<div class="mr-4"></div>
+<div class="col">
+<div class="badge-info">292</div>
+<div class="text-uppercase text-muted small">feeds</div>
+</div>
+</div>
+</div>
+</div>
+<!-- /.col-->
+</div>
+<!-- /.row-->
+<div class="active">
+<div class="py-2">
+<div class="card">
+<div class="card-header">Traffic &amp; Sales</div>
+<div class="col-sm-12">
+<div class="row">
+<div class="card">
+<div class="col-6">
+<div class="col-6">
+<div class="c-header-light progress-group"><small class="c-avatar-img">New Clients</small>
+<div class="col-sm-6">9,123</div>
+</div>
+</div>
+<!-- /.col-->
+<div class="text-uppercase">
+<div class="d-lg-down-none c-sidebar-fixed"><small class="mfe-auto">Recuring Clients</small>
+<div class="col-md-1">22,643</div>
+</div>
+</div>
+<!-- /.col-->
+</div>
+<!-- /.row-->
+<hr class="mt-0"/>
+<div class="progress-group mb-4">
+<div class="col-sm-6"><span class="badge-primary">Monday</span></div>
+<div class="progress-group-bars">
+<div class="text-uppercase c-icon-lg">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="34" class="card-header text-uppercase" role="progressbar" style="width: 34%"></div>
+</div>
+<div class="c-sidebar-fixed c-sidebar-nav">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="78" class="col-sm-12 py-2" role="progressbar" style="width: 78%"></div>
+</div>
+</div>
+</div>
+<div class="badge-secondary d-none">
+<div class="progress-group-prepend"><span class="progress-group-text">Tuesday</span></div>
+<div class="dropdown-divider">
+<div class="progress progress-xs">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="56" class="progress-bar bg-info" role="progressbar" style="width: 56%"></div>
+</div>
+<div class="progress-xs d-lg-none">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="94" class="btn-transparent bg-warning" role="progressbar" style="width: 94%"></div>
+</div>
+</div>
+</div>
+<div class="my-4 text-value-lg">
+<div class="c-sidebar-brand-full"><span class="badge-primary">Wednesday</span></div>
+<div class="mx-2">
+<div class="progress-xs align-items-end">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="12" class="btn-toolbar small" role="progressbar" style="width: 12%"></div>
+</div>
+<div class="c-sidebar-brand-full bg-facebook">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="67" class="progress-group-header bg-info" role="progressbar" style="width: 67%"></div>
+</div>
+</div>
+</div>
+<div class="px-3 progress-group-text">
+<div class="c-sidebar-nav-dropdown"><span class="c-sidebar-lg-show">Thursday</span></div>
+<div class="mt-0">
+<div class="progress progress-xs">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="43" class="btn-outline-secondary card" role="progressbar" style="width: 43%"></div>
+</div>
+<div class="mb-4 col-sm-12">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="91" class="progress-group-text progress-bar" role="progressbar" style="width: 91%"></div>
+</div>
+</div>
+</div>
+<div class="progress-group mb-4">
+<div class="mb-0"><span class="bg-light">Friday</span></div>
+<div class="mt-auto">
+<div class="card-footer c-sidebar-minimizer">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="22" class="justify-content-between d-lg-none" role="progressbar" style="width: 22%"></div>
+</div>
+<div class="bg-warning bg-linkedin">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="73" class="progress dropdown-menu-right" role="progressbar" style="width: 73%"></div>
+</div>
+</div>
+</div>
+<div class="mb-sm-2 btn-toolbar">
+<div class="progress-group-prepend"><span class="c-sidebar-fixed">Saturday</span></div>
+<div class="float-right">
+<div class="p-0 mfe-auto">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="53" class="progress-bar bg-info" role="progressbar" style="width: 53%"></div>
+</div>
+<div class="c-callout-success mt-auto">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="82" class="progress-bar bg-danger" role="progressbar" style="width: 82%"></div>
+</div>
+</div>
+</div>
+<div class="pb-0 bg-secondary">
+<div class="progress-group-bars"><span class="progress-group-text">Sunday</span></div>
+<div class="progress-group-bars">
+<div class="dropdown-divider c-vr">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="9" class="c-header-nav-item btn-transparent" role="progressbar" style="width: 9%"></div>
+</div>
+<div class="progress progress-xs">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="69" class="c-icon-xl progress-group-prepend" role="progressbar" style="width: 69%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- /.col-->
+<div class="btn-outline-secondary">
+<div class="row">
+<div class="col-6">
+<div class="c-callout c-callout-warning"><small class="bg-danger">Pageviews</small>
+<div class="bg-linkedin">78,623</div>
+</div>
+</div>
+<!-- /.col-->
+<div class="card-title">
+<div class="c-callout c-callout-success"><small class="badge-primary">Organic</small>
+<div class="bg-linkedin">49,123</div>
+</div>
+</div>
+<!-- /.col-->
+</div>
+<!-- /.row-->
+<hr class="mt-0"/>
+<div class="badge-primary">
+<div class="c-main">
+<svg class="font-weight-bold c-sidebar-nav-link">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user"></use>
+</svg>
+<div>Male</div>
+<div class="m-0 col-md-12">43%</div>
+</div>
+<div class="c-chart-wrapper">
+<div class="progress progress-xs">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="43" class="c-header-nav mfe-2" role="progressbar" style="width: 43%"></div>
+</div>
+</div>
+</div>
+<div class="progress-group-bars mt-2">
+<div class="progress-group-header">
+<svg class="float-right dropdown-menu-right">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user-female"></use>
+</svg>
+<div>Female</div>
+<div class="mfs-auto font-weight-bold">37%</div>
+</div>
+<div class="text-uppercase">
+<div class="c-sidebar-nav col">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="43" class="mb-0 d-lg-down-none" role="progressbar" style="width: 43%"></div>
+</div>
+</div>
+</div>
+<div class="c-header-toggler">
+<div class="c-icon-3xl c-sidebar-lg-show">
+<svg class="c-icon progress-group-icon">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-globe-alt"></use>
+</svg>
+<div>Organic Search</div>
+<div class="mb-0 progress-group-text mb-sm-2">191.235</div>
+<div class="c-sidebar-nav-link dropdown-menu">(56%)</div>
+</div>
+<div class="progress-group-icon">
+<div class="c-sidebar-nav-dropdown bg-primary">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="56" class="progress-bar bg-success" role="progressbar" style="width: 56%"></div>
+</div>
+</div>
+</div>
+<div class="progress-group">
+<div class="fade-in c-vr">
+<svg class="c-header-toggler content-center">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-facebook"></use>
+</svg>
+<div>Facebook</div>
+<div class="small c-callout-info clearfix">51.223</div>
+<div class="progress-group-text col-lg-4">(15%)</div>
+</div>
+<div class="progress-group-bars">
+<div class="mx-2 c-sidebar-nav-dropdown-items">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="15" class="c-sidebar-nav-dropdown c-sidebar-nav" role="progressbar" style="width: 15%"></div>
+</div>
+</div>
+</div>
+<div class="progress-group">
+<div class="progress-group-header align-items-end">
+<svg class="col-sm-6 text-muted">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-twitter"></use>
+</svg>
+<div>Twitter</div>
+<div class="c-callout-info c-header-brand col-md-12">37.564</div>
+<div class="progress-group c-subheader">(11%)</div>
+</div>
+<div class="align-items-end">
+<div class="btn-transparent col-sm-12">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="11" class="progress-bar bg-success" role="progressbar" style="width: 11%"></div>
+</div>
+</div>
+</div>
+<div class="breadcrumb-item">
+<div class="progress-group-icon c-header-nav">
+<svg class="c-sidebar-nav-title bg-info">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-linkedin"></use>
+</svg>
+<div>LinkedIn</div>
+<div class="active mr-2 c-chart-wrapper">27.319</div>
+<div class="c-sidebar-dark c-callout-success">(8%)</div>
+</div>
+<div class="bg-secondary">
+<div class="bg-light c-icon-lg">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="8" class="progress-bar bg-success" role="progressbar" style="width: 8%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- /.col-->
+</div>
+<!-- /.row--><br/>
+<table class="mb-5 c-sidebar-brand c-avatar dropdown-divider progress-group-prepend">
+<thead class="c-sidebar-nav-icon">
+<tr>
+<th class="text-center">
+<svg class="text-muted">
+<use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-people"></use>
+</svg>
+</th>
+<th>User</th>
+<th class="progress-group">Country</th>
+<th>Usage</th>
+<th class="dropdown">Payment Method</th>
+<th>Activity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="btn">
+<div class="mb-4"><img alt="user@email.com" class="c-sidebar-nav-item" src="assets/img/avatars/1.jpg"/><span class="dropdown c-header-with-subheader"></span></div>
+</td>
+<td>
+<div>Yiorgos Avraamu</div>
+<div class="small text-muted"><span>New</span> | Registered: Jan 1, 2015</div>
+</td>
+<td class="mb-0">
+<svg class="bg-primary col-6">
+<use xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-us"></use>
+</svg>
+</td>
+<td>
+<div class="badge">
+<div class="col-lg-3"><strong>50%</strong></div>
+<div class="clearfix"><small class="btn-primary">Jun 11, 2015 - Jul 10, 2015</small></div>
+</div>
+<div class="c-avatar-status text-muted">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" class="c-sidebar-nav-link thead-light" role="progressbar" style="width: 50%"></div>
+</div>
+</td>
+<td class="bg-warning">
+<svg class="mb-5 c-vr">
+<use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-mastercard"></use>
+</svg>
+</td>
+<td>
+<div class="card btn-group-toggle">Last login</div><strong>10 sec ago</strong>
+</td>
+</tr>
+<tr>
+<td class="mfe-2">
+<div class="ml-auto"><img alt="user@email.com" class="col-sm-12" src="assets/img/avatars/2.jpg"/><span class="table-outline c-sidebar-lg-show"></span></div>
+</td>
+<td>
+<div>Avram Tarasios</div>
+<div class="progress-group mx-3"><span>Recurring</span> | Registered: Jan 1, 2015</div>
+</td>
+<td class="c-header-toggler">
+<svg class="btn-primary mt-auto">
+<use xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-br"></use>
+</svg>
+</td>
+<td>
+<div class="progress-group">
+<div class="card-footer"><strong>10%</strong></div>
+<div class="float-right"><small class="c-header-with-subheader">Jun 11, 2015 - Jul 10, 2015</small></div>
+</div>
+<div class="c-icon c-callout-warning">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10" class="progress-group-icon c-header-nav" role="progressbar" style="width: 10%"></div>
+</div>
+</td>
+<td class="text-center">
+<svg class="card-body progress-group-text">
+<use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-visa"></use>
+</svg>
+</td>
+<td>
+<div class="clearfix c-wrapper">Last login</div><strong>5 minutes ago</strong>
+</td>
+</tr>
+<tr>
+<td class="c-sidebar-nav-item">
+<div class="c-header-nav-item"><img alt="user@email.com" class="c-avatar-img" src="assets/img/avatars/3.jpg"/><span class="my-4 table"></span></div>
+</td>
+<td>
+<div>Quintin Ed</div>
+<div class="c-icon table-hover"><span>New</span> | Registered: Jan 1, 2015</div>
+</td>
+<td class="mb-5">
+<svg class="progress-group-text d-none">
+<use xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-in"></use>
+</svg>
+</td>
+<td>
+<div class="dropdown-item">
+<div class="col-md"><strong>74%</strong></div>
+<div class="align-items-end"><small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small></div>
+</div>
+<div class="progress progress-xs">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="74" class="c-avatar-status c-sidebar-dark" role="progressbar" style="width: 74%"></div>
+</div>
+</td>
+<td class="c-sidebar">
+<svg class="c-sidebar-nav-dropdown-toggle c-chart-wrapper">
+<use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-stripe"></use>
+</svg>
+</td>
+<td>
+<div class="c-sidebar-nav-item badge-primary">Last login</div><strong>1 hour ago</strong>
+</td>
+</tr>
+<tr>
+<td class="progress-xs">
+<div class="col-lg-4"><img alt="user@email.com" class="col-md-1" src="assets/img/avatars/4.jpg"/><span class="progress-group-bars c-sidebar-lg-show"></span></div>
+</td>
+<td>
+<div>Enéas Kwadwo</div>
+<div class="btn-outline-secondary c-header-nav"><span>New</span> | Registered: Jan 1, 2015</div>
+</td>
+<td class="text-center">
+<svg class="c-icon c-icon-xl">
+<use xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-fr"></use>
+</svg>
+</td>
+<td>
+<div class="clearfix">
+<div class="float-left"><strong>98%</strong></div>
+<div class="c-sidebar-nav-link"><small class="d-lg-down-none">Jun 11, 2015 - Jul 10, 2015</small></div>
+</div>
+<div class="mr-4 c-avatar-img">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="98" class="progress-bar bg-danger" role="progressbar" style="width: 98%"></div>
+</div>
+</td>
+<td class="c-sidebar-nav-icon">
+<svg class="text-value-xl c-sidebar-brand">
+<use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-paypal"></use>
+</svg>
+</td>
+<td>
+<div class="c-footer c-chart-wrapper">Last login</div><strong>Last month</strong>
+</td>
+</tr>
+<tr>
+<td class="c-sidebar-nav-icon">
+<div class="progress-group-header"><img alt="user@email.com" class="c-avatar-img" src="assets/img/avatars/5.jpg"/><span class="progress-bar btn-group"></span></div>
+</td>
+<td>
+<div>Agapetus Tadeáš</div>
+<div class="progress-group-icon c-vr"><span>New</span> | Registered: Jan 1, 2015</div>
+</td>
+<td class="btn-outline-secondary">
+<svg class="dropdown-menu d-lg-down-none">
+<use xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-es"></use>
+</svg>
+</td>
+<td>
+<div class="pb-0">
+<div class="float-left"><strong>22%</strong></div>
+<div class="c-sidebar-brand"><small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small></div>
+</div>
+<div class="col-sm-6 bg-linkedin">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="22" class="col-md-1 text-center" role="progressbar" style="width: 22%"></div>
+</div>
+</td>
+<td class="text-center">
+<svg class="progress-group-bars text-value-lg">
+<use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-apple-pay"></use>
+</svg>
+</td>
+<td>
+<div class="fade-in mt-0">Last login</div><strong>Last week</strong>
+</td>
+</tr>
+<tr>
+<td class="progress-group-bars">
+<div class="c-avatar"><img alt="user@email.com" class="c-sidebar-nav-title" src="assets/img/avatars/6.jpg"/><span class="c-sidebar-nav-link table"></span></div>
+</td>
+<td>
+<div>Friderik Dávid</div>
+<div class="small text-muted"><span>New</span> | Registered: Jan 1, 2015</div>
+</td>
+<td class="progress-group-prepend">
+<svg class="c-sidebar-nav-dropdown-toggle badge-secondary">
+<use xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-pl"></use>
+</svg>
+</td>
+<td>
+<div class="mx-3">
+<div class="row"><strong>43%</strong></div>
+<div class="bg-primary"><small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small></div>
+</div>
+<div class="badge-warning dropdown">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="43" class="bg-secondary ml-auto" role="progressbar" style="width: 43%"></div>
+</div>
+</td>
+<td class="progress-group-prepend">
+<svg class="c-avatar-img col-sm-12">
+<use xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-amex"></use>
+</svg>
+</td>
+<td>
+<div class="small text-muted">Last login</div><strong>Yesterday</strong>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- /.col-->
+</div>
+<!-- /.row-->
+</div>
+</div>
+</main>
+</div>
+<footer class="float-left">
+<div><a href="https://coreui.io">CoreUI</a> © 2020 creativeLabs.</div>
+<div class="c-icon-xl">Powered by <a href="https://coreui.io/">CoreUI</a></div>
+</footer>
+</div>
+<!-- CoreUI and necessary plugins-->
+<script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
+<!--[if IE]><!-->
+<script src="node_modules/@coreui/icons/js/svgxuse.min.js"></script>
+<!--<![endif]-->
+<!-- Plugins and scripts required by this view-->
+<script src="node_modules/@coreui/chartjs/dist/js/coreui-chartjs.bundle.js"></script>
+<script src="node_modules/@coreui/utils/dist/coreui-utils.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
